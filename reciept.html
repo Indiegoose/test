@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Receipt Generator</title>
+    <!-- PyScript CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.05.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2023.05.1/pyscript.js"></script>
+</head>
+<body>
+
+    <!-- Navigation links -->
+    <p>
+        <a href="index.html">SKU Generator</a> | 
+        <a href="receipt.html">Receipt Generator</a>
+    </p>
+
+    <h1>OBMC Entrep Fair - Cookie Shop</h1>
+    <h2>Menu</h2>
+
+    <!-- Menu Checkboxes -->
+    <input type="checkbox" id="item1" value="45"> Chocolate Chip - ₱45<br>
+    <input type="checkbox" id="item2" value="50"> Double Chocolate Fudge - ₱50<br>
+    <input type="checkbox" id="item3" value="55"> Red Velvet Cream Cheese - ₱55<br>
+    <input type="checkbox" id="item4" value="45"> Oatmeal Raisin - ₱45<br>
+    <input type="checkbox" id="item5" value="50"> Matcha Green Tea - ₱50<br><br>
+
+    <button py-click="create_order()">Create Order</button>
+
+    <h3>Order Summary:</h3>
+    <div id="receipt-output">Your order summary will appear here.</div>
+
+    <!-- Link to external Python file -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
